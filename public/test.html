@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>React App Tests</title>
+    <!-- https://unpkg.com/mocha@9.1.3/mocha.css -->
+    <link rel="stylesheet" href="test/lib/mocha/mocha.css" />
+
+    <!-- development build of react needed for unit tests -->
+    <!-- https://unpkg.com/react@17.0.2/umd/react.development.js -->
+    <script src="test/lib/react/react.development.js"></script>
+    <!-- https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js -->
+    <script src="test/lib/react/react-dom.development.js"></script>
+    <!-- https://unpkg.com/react-dom@17.0.2/umd/react-dom-test-utils.development.js -->
+    <script src="test/lib/react/react-dom-test-utils.development.js"></script>
+    <!-- https://unpkg.com/chai@4.3.4/chai.js -->
+    <script src="test/lib/mocha/chai.js"></script>
+    <!-- https://unpkg.com/mocha@9.1.3/mocha.js -->
+    <script src="test/lib/mocha/mocha.js"></script>
+    <!-- https://unpkg.com/@testing-library/dom@8.11.1/dist/@testing-library/dom.umd.js -->
+    <script src="test/lib/@testing-library/dom.umd.js"></script>
+  </head>
+
+  <body><div id="mocha"></div></body>
+  
+  <script type="module" class="mocha-init">
+    mocha.setup('bdd');
+    mocha.checkLeaks();
+  </script>
+  
+  <script type="module" src="test/App.test.js"></script>
+  <!-- include more tests here -->
+
+  <script type="module" class="mocha-exec">
+    mocha.run();
+  </script>
+</html>
