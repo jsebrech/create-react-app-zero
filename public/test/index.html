@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>React App Tests</title>
+
+    <!-- make paths relative to parent folder -->
+    <base href="../" />
+
     <!-- https://unpkg.com/mocha@9.1.3/mocha.css -->
     <link rel="stylesheet" href="test/lib/mocha/mocha.css" />
 
@@ -29,6 +33,7 @@
   </script>
   
   <script type="module" src="test/App.test.js"></script>
+  
   <!-- include more tests here -->
 
   <script type="module" class="mocha-exec">
