@@ -1,8 +1,8 @@
 # Why Create React App Zero
 
-Hi. I'm Joeri. I made Create React App Zero, and I'd like to explain why.
+Hi. I'm Joeri. I made [Create React App Zero](https://github.com/jsebrech/create-react-app-zero), a way of building React apps without any build tools or external dependencies, and I'd like to explain why.
 
-First of all, I love [Create React App](https://create-react-app.dev/)! It has made building a single page web app with React very easy.
+First of all, I love [Create React App](https://create-react-app.dev/)! It has made building a single page web app with React very easy and brings a lot of power right out of the box.
 
 But.
 
@@ -52,4 +52,17 @@ Could this be used to bring Create React App to the browser using a no build too
 
 How much could be brought over? Could this be a nice development experience?
 
+## The result
+
 The result of this thought exercise is this project.
+
+So how far did we get?
+
+| Measurement | Create React App | Create React App Zero |
+|-------------|------------------|-----------------------|
+| FCP         | 1.2s             | 1.7s                  |
+| LCP         | 1.5s             | 2.0s                  |
+| Page weight | 142kb            | 144kb                 |
+| Lighthouse  | 100%             | 99%                   |
+
+Not bad, don't you agree?
