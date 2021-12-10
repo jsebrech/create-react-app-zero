@@ -1,4 +1,3 @@
-// import { render, screen } from '@testing-library/react';
 import { html, render, screen, expect } from './setupTests.js';
 import App from '../src/App.js';
 
