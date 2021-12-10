@@ -11,7 +11,7 @@ This app is entirely self-contained and does not rely on any external dependenci
 
 ### Running
 
-Run a local web server for the public folder and browse to `index.html`.
+Run a local web server for the `public` folder and browse to `index.html`.
 
 Examples of static web servers you can run:
 

@@ -1,6 +1,8 @@
 # Why Create React App Zero
 
-I love [Create React App](https://create-react-app.dev/)! It has made building a single page web app with React very easy.
+Hi. I'm Joeri. I made Create React App Zero, and I'd like to explain why.
+
+First of all, I love [Create React App](https://create-react-app.dev/)! It has made building a single page web app with React very easy.
 
 But.
 
@@ -32,13 +34,13 @@ What causes this incredible size are all the external dependencies pulled into t
 
 With that many external dependencies something is bound to go wrong eventually. This is the lived experience I've had with many web projects in React or Angular. Make a web app, let it sit untouched for two years, come back to it to do a one line change, and you'll probably spend a few hours just getting it to run again.
 
-Also, I just feel uncomfortable with that much unknowable code being included into the build. I want to choose my dependencies more carefully. But I also don't want to give up the fine development experience all these tools are buying me. Can't I have my cake and eat it too? Or is the cake always a lie?
+Also, I just feel uncomfortable with that much unknowable code being included into the build. I want to choose my dependencies more carefully. But I also don't want to give up the fine development experience all these tools are buying me. Can't I have my cake and eat it too?
 
 ## The insight
 
-Checking out the preact project I discovered the path laid out by others for using preact without build tools:
+Checking out the Preact project I discovered the path laid out by others for using Preact without build tools:
 
-1. Start with preact itself using the [no build tools route](https://preactjs.com/guide/v10/getting-started/#no-build-tools-route)
+1. Start with Preact itself using the [no build tools route](https://preactjs.com/guide/v10/getting-started/#no-build-tools-route)
 2. Use [htm](https://github.com/developit/htm) as an in-browser alternative to JSX
 3. Use a [hash router](https://jsfiddle.net/developit/gLyL6rbn/) to do app routing in a static web page
 
@@ -50,4 +52,4 @@ Could this be used to bring Create React App to the browser using a no build too
 
 How much could be brought over? Could this be a nice development experience?
 
-The result of this thought exercise is this project. I will let you be the judge.
+The result of this thought exercise is this project.
