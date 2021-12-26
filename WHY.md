@@ -10,7 +10,7 @@ But.
 
 Let's run it:
 
-```sh
+```
 > npx create-react-app@5.0.0 my-app
 
 Creating a new React app in /.../my-app.
