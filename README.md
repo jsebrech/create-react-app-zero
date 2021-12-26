@@ -1,7 +1,7 @@
 # Getting Started with Create React App Zero
 
 This is a template for [Create React App Zero](https://github.com/jsebrech/create-react-app-zero),
-an alternative to [Create React App](https://github.com/facebook/create-react-app) that requires no build tools and has no external dependencies.
+an alternative to [Create React App](https://github.com/facebook/create-react-app) that requires no build tools and has no external dependencies. Check out the [demo app on github pages](https://jsebrech.github.io/create-react-app-zero/public/).
 
 Feel free to fork and make it your own.
 
