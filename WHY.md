@@ -11,7 +11,7 @@ But.
 Let's run it:
 
 ```sh
-> npx create-react-app@4.0.3 my-app
+> npx create-react-app@5.0.0 my-app
 
 Creating a new React app in /.../my-app.
 [...]
@@ -19,10 +19,10 @@ Happy hacking!
 
 > du -sh my-app
 
-328M    my-app
+298M    my-app
 ```
 
-328 megabytes! For a hello world app!
+298 megabytes! For a hello world app!
 
 Why is that?
 
@@ -36,15 +36,13 @@ With that many external dependencies something is bound to go wrong eventually. 
 
 Also, I just feel uncomfortable with that much unknowable code being included into the build. I want to choose my dependencies more carefully. But I also don't want to give up the fine development experience all these tools are buying me. Can't I have my cake and eat it too?
 
-## The insight
+## The challenge
 
-Checking out the Preact project I discovered the path laid out by others for using Preact without build tools:
+The Preact project has a nice path laid out for a much lighter weight way of building web apps:
 
 1. Start with Preact itself using the [no build tools route](https://preactjs.com/guide/v10/getting-started/#no-build-tools-route)
 2. Use [htm](https://github.com/developit/htm) as an in-browser alternative to JSX
 3. Use a [hash router](https://jsfiddle.net/developit/gLyL6rbn/) to do app routing in a static web page
-
-## The challenge
 
 Seeing this solution I started wondering: how far can you take this approach?
 
