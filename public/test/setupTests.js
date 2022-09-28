@@ -4,6 +4,10 @@ const { expect } = window.chai;
 const { act } = window.ReactTestUtils;
 const { getByText, queries } = window.TestingLibraryDom;
 
+// avoid warning "The current testing environment is not configured to support act(...)"
+// see https://github.com/reactwg/react-18/discussions/102
+window.IS_REACT_ACT_ENVIRONMENT = true;
+
 let rootContainer;
 let screen;
 
@@ -24,9 +28,8 @@ afterEach(() => {
 });
 
 function render(el) {
-  act(() => {
-    ReactDOM.render(el, rootContainer);
-  });
+  const root = ReactDOM.createRoot(rootContainer);
+  act(() => root.render(el));
 }
 
 export { ReactDOM, html, rootContainer, render, expect, act, getByText, screen };
