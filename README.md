@@ -66,6 +66,14 @@ In your code, import the necessary symbols from `src/imports.js`.
 
 Out of the box there are examples of both UMD and ESM libraries being used.
 
+### Routing
+
+To add routing, use the [UMD version of React Router](https://unpkg.com/browse/react-router/umd/) and [set up a HashRouter](https://www.pluralsight.com/guides/using-react-router-with-cdn-links).
+
+See the [router branch](https://github.com/jsebrech/create-react-app-zero/tree/router) for an example that uses a static hash router.
+
+If you don't want to use a hash router, [you may need to configure your production server to support client-side routing](https://create-react-app.dev/docs/deployment#serving-apps-with-client-side-routing) before deploying your app.
+
 ### Deployment
 
 Upload the contents of the `public/` folder to a web host, or deploy it on github pages.
@@ -76,7 +84,6 @@ While a best effort has been made to bring you an authentic React web developmen
 
 - **minification**: the dependencies are minified, and if your app code is so big to need minification, you probably need to use Create React App instead of this, but indeed there is no minification.
 - **bundling and tree shaking**: again, the dependencies are pre-shaken and pre-bundled, but the app code itself is not. Host on HTTP/2 to benefit from [multiplexing](https://developers.google.com/web/fundamentals/performance/http2/#request_and_response_multiplexing) and limit the performance impact of the lack of bundling.
-- **routing**: add the [UMD version of React Router](https://unpkg.com/browse/react-router/umd/) and [set up a HashRouter](https://www.pluralsight.com/guides/using-react-router-with-cdn-links).
 - **linting**: if you use *VS Code* with the *eslint* extension it should pick up the `.eslintrc.json` config and lint your project automatically.
 - **Internet Explorer**: it's time to let it go, seriously. But yes, no IE support, at all. Browser support in general should be pretty good though because all popular browsers are modern browsers.
 
