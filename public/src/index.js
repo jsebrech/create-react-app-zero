@@ -1,4 +1,4 @@
-import { React, ReactDOM, html } from './imports.js';
+import { React, ReactDOM, HashRouter, html } from './imports.js';
 import App from './App.js';
 // import reportWebVitals from './reportWebVitals.js';
 
@@ -6,7 +6,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   html`
   <${React.StrictMode}>
-    <${App} />
+    <${HashRouter}>
+      <${App} />
+    <//>
   <//>
   `
 );
